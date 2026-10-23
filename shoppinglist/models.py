@@ -7,6 +7,7 @@ class Shop(models.Model):
 
     def __str__(self):
         return self.name
+    
 class Item(models.Model):
     name = models.CharField(max_length = 100)
     item_url = models.URLField(blank = True, null = True)
